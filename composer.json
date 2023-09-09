@@ -1,8 +1,14 @@
 {
     "name": "jakubboucek/openwhisk-runtime",
-    "description": "OpenWhisk runtime tools for PHP",
+    "description": "OpenWhisk runtime tools for PHP, eg. with DigitalOcean Serverless Functions",
     "license": "MIT",
     "type": "library",
+    "keywords": [
+        "digitalocean functions",
+        "digitalocean serverless",
+        "openwhisk",
+        "openwhisk runtime"
+    ],
     "authors": [
         {
             "name": "Jakub Bouček",
