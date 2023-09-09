@@ -1,0 +1,23 @@
+{
+    "name": "jakubboucek/openwhisk-runtime",
+    "description": "OpenWhisk runtime tools for PHP",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jakub Bouček",
+            "email": "pan@jakubboucek.cz"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "JakubBoucek\\OpenWhisk\\Runtime\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
