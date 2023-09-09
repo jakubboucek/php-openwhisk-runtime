@@ -36,13 +36,13 @@ jobs:
             - name: Get Composer Cache Directory
               id: composer-cache
               run: |
-                  echo "::set-output name=dir::$(composer config cache-files-dir)"
+                  echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
             - uses: actions/cache@v2
               with:
                   path: |
                       ${{ steps.composer-cache.outputs.dir }}
-                      **/composer.lock
-                  key: ${{ runner.os }}-${{ matrix.php }}-composer-${{ hashFiles('**/composer.json') }}
+                      composer.lock
+                  key: ${{ runner.os }}-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
 
             - name: Install Composer
               run: composer update --no-progress
